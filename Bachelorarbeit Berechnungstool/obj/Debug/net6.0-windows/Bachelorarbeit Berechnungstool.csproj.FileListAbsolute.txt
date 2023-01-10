@@ -1,0 +1,21 @@
+C:\Users\p.dupont.MCG1.000\Documents\Projekte\Privat\Bachelorarbeit\Bachelorarbeit Berechnungstool\bin\Debug\net6.0-windows\Bachelorarbeit Berechnungstool.exe
+C:\Users\p.dupont.MCG1.000\Documents\Projekte\Privat\Bachelorarbeit\Bachelorarbeit Berechnungstool\bin\Debug\net6.0-windows\Bachelorarbeit Berechnungstool.deps.json
+C:\Users\p.dupont.MCG1.000\Documents\Projekte\Privat\Bachelorarbeit\Bachelorarbeit Berechnungstool\bin\Debug\net6.0-windows\Bachelorarbeit Berechnungstool.runtimeconfig.json
+C:\Users\p.dupont.MCG1.000\Documents\Projekte\Privat\Bachelorarbeit\Bachelorarbeit Berechnungstool\bin\Debug\net6.0-windows\Bachelorarbeit Berechnungstool.dll
+C:\Users\p.dupont.MCG1.000\Documents\Projekte\Privat\Bachelorarbeit\Bachelorarbeit Berechnungstool\bin\Debug\net6.0-windows\Bachelorarbeit Berechnungstool.pdb
+C:\Users\p.dupont.MCG1.000\Documents\Projekte\Privat\Bachelorarbeit\Bachelorarbeit Berechnungstool\obj\Debug\net6.0-windows\Bachelorarbeit Berechnungstool.csproj.AssemblyReference.cache
+C:\Users\p.dupont.MCG1.000\Documents\Projekte\Privat\Bachelorarbeit\Bachelorarbeit Berechnungstool\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\p.dupont.MCG1.000\Documents\Projekte\Privat\Bachelorarbeit\Bachelorarbeit Berechnungstool\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\p.dupont.MCG1.000\Documents\Projekte\Privat\Bachelorarbeit\Bachelorarbeit Berechnungstool\obj\Debug\net6.0-windows\Bachelorarbeit Berechnungstool_MarkupCompile.cache
+C:\Users\p.dupont.MCG1.000\Documents\Projekte\Privat\Bachelorarbeit\Bachelorarbeit Berechnungstool\obj\Debug\net6.0-windows\Bachelorarbeit Berechnungstool_MarkupCompile.lref
+C:\Users\p.dupont.MCG1.000\Documents\Projekte\Privat\Bachelorarbeit\Bachelorarbeit Berechnungstool\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\p.dupont.MCG1.000\Documents\Projekte\Privat\Bachelorarbeit\Bachelorarbeit Berechnungstool\obj\Debug\net6.0-windows\Bachelorarbeit Berechnungstool.g.resources
+C:\Users\p.dupont.MCG1.000\Documents\Projekte\Privat\Bachelorarbeit\Bachelorarbeit Berechnungstool\obj\Debug\net6.0-windows\Bachelorarbeit Berechnungstool.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\p.dupont.MCG1.000\Documents\Projekte\Privat\Bachelorarbeit\Bachelorarbeit Berechnungstool\obj\Debug\net6.0-windows\Bachelorarbeit Berechnungstool.AssemblyInfoInputs.cache
+C:\Users\p.dupont.MCG1.000\Documents\Projekte\Privat\Bachelorarbeit\Bachelorarbeit Berechnungstool\obj\Debug\net6.0-windows\Bachelorarbeit Berechnungstool.AssemblyInfo.cs
+C:\Users\p.dupont.MCG1.000\Documents\Projekte\Privat\Bachelorarbeit\Bachelorarbeit Berechnungstool\obj\Debug\net6.0-windows\Bachelorarbeit Berechnungstool.csproj.CoreCompileInputs.cache
+C:\Users\p.dupont.MCG1.000\Documents\Projekte\Privat\Bachelorarbeit\Bachelorarbeit Berechnungstool\obj\Debug\net6.0-windows\Bachelorarbeit Berechnungstool.dll
+C:\Users\p.dupont.MCG1.000\Documents\Projekte\Privat\Bachelorarbeit\Bachelorarbeit Berechnungstool\obj\Debug\net6.0-windows\refint\Bachelorarbeit Berechnungstool.dll
+C:\Users\p.dupont.MCG1.000\Documents\Projekte\Privat\Bachelorarbeit\Bachelorarbeit Berechnungstool\obj\Debug\net6.0-windows\Bachelorarbeit Berechnungstool.pdb
+C:\Users\p.dupont.MCG1.000\Documents\Projekte\Privat\Bachelorarbeit\Bachelorarbeit Berechnungstool\obj\Debug\net6.0-windows\Bachelorarbeit Berechnungstool.genruntimeconfig.cache
+C:\Users\p.dupont.MCG1.000\Documents\Projekte\Privat\Bachelorarbeit\Bachelorarbeit Berechnungstool\obj\Debug\net6.0-windows\ref\Bachelorarbeit Berechnungstool.dll
