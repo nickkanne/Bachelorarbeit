@@ -22,17 +22,7 @@
         <TextBox x:Name="lAPPRTxtBox" HorizontalAlignment="Left" Margin="10,256,0,0" TextWrapping="Wrap" Text="lAPPR" VerticalAlignment="Top" Width="78" Height="22" TextChanged="TextBox_TextChanged"/>
         <TextBox x:Name="hULTxtBox" HorizontalAlignment="Left" Margin="10,328,0,0" TextWrapping="Wrap" Text="hUL" VerticalAlignment="Top" Width="78" Height="22" TextChanged="TextBox_TextChanged" RenderTransformOrigin="0.485,0.707"/>
         <TextBox x:Name="lULTxtBox" HorizontalAlignment="Left" Margin="93,328,0,0" TextWrapping="Wrap" Text="lUL" VerticalAlignment="Top" Width="78" Height="22" TextChanged="TextBox_TextChanged"/>
-        <TextBox x:Name="OutFmaxTxtBox" HorizontalAlignment="Left" Margin="744,47,0,0" TextWrapping="Wrap" Text="Fmax" VerticalAlignment="Top" Width="156" Height="22" TextChanged="TextBox_TextChanged"/>
-        <TextBox x:Name="OutFqlapTxtBox" HorizontalAlignment="Left" Margin="744,101,0,0" TextWrapping="Wrap" Text="Fqlap" VerticalAlignment="Top" Width="156" Height="22" TextChanged="TextBox_TextChanged"/>
-        <TextBox x:Name="OutFAPTxtBox" HorizontalAlignment="Left" Margin="744,128,0,0" TextWrapping="Wrap" Text="FAPL" VerticalAlignment="Top" Width="156" Height="22" TextChanged="TextBox_TextChanged"/>
         <Button x:Name="CalcBtn" Content="Calc" HorizontalAlignment="Left" Margin="811,480,0,0" VerticalAlignment="Top" Height="53" Width="89" Click="CalcBtn_Click"/>
-
-
-
-        <TextBox x:Name="OutlPRTxtBox" HorizontalAlignment="Left" Margin="744,182,0,0" TextWrapping="Wrap" Text="lPR" VerticalAlignment="Top" Width="156" Height="22" TextChanged="TextBox_TextChanged"/>
-        <TextBox x:Name="OutCFedTxtBox" HorizontalAlignment="Left" Margin="744,209,0,0" TextWrapping="Wrap" Text="CFed" VerticalAlignment="Top" Width="156" Height="22" TextChanged="TextBox_TextChanged"/>
-        <TextBox x:Name="OutFprTxtBox" HorizontalAlignment="Left" Margin="583,128,0,0" TextWrapping="Wrap" Text="Fpr" VerticalAlignment="Top" Width="156" Height="22" TextChanged="TextBox_TextChanged"/>
-        <TextBox x:Name="OutalphaTxtBox" HorizontalAlignment="Left" Margin="744,236,0,0" TextWrapping="Wrap" Text="alpha" VerticalAlignment="Top" Width="156" Height="22" TextChanged="TextBox_TextChanged"/>
         <TextBox x:Name="lRTuntenTxtBox" HorizontalAlignment="Left" Margin="10,444,0,0" TextWrapping="Wrap" Text="lRTunten" VerticalAlignment="Top" Width="78" Height="22" TextChanged="TextBox_TextChanged"/>
         <TextBox x:Name="lRTobenTxtBox" HorizontalAlignment="Left" Margin="93,444,0,0" TextWrapping="Wrap" Text="lRToben" VerticalAlignment="Top" Width="78" Height="22" TextChanged="TextBox_TextChanged"/>
 

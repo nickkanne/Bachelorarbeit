@@ -19,3 +19,5 @@ C:\Users\p.dupont.MCG1.000\Documents\Projekte\Privat\Bachelorarbeit\Bachelorarbe
 C:\Users\p.dupont.MCG1.000\Documents\Projekte\Privat\Bachelorarbeit\Bachelorarbeit Berechnungstool\obj\Debug\net6.0-windows\Bachelorarbeit Berechnungstool.pdb
 C:\Users\p.dupont.MCG1.000\Documents\Projekte\Privat\Bachelorarbeit\Bachelorarbeit Berechnungstool\obj\Debug\net6.0-windows\Bachelorarbeit Berechnungstool.genruntimeconfig.cache
 C:\Users\p.dupont.MCG1.000\Documents\Projekte\Privat\Bachelorarbeit\Bachelorarbeit Berechnungstool\obj\Debug\net6.0-windows\ref\Bachelorarbeit Berechnungstool.dll
+C:\Users\p.dupont.MCG1.000\Documents\Projekte\Privat\Bachelorarbeit\Bachelorarbeit Berechnungstool\obj\Debug\net6.0-windows\Bachelorarbeit_Berechnungstool.Resource1.resources
+C:\Users\p.dupont.MCG1.000\Documents\Projekte\Privat\Bachelorarbeit\Bachelorarbeit Berechnungstool\obj\Debug\net6.0-windows\Bachelorarbeit Berechnungstool.csproj.GenerateResource.cache

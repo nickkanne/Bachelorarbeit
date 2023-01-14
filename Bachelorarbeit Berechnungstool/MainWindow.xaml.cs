@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -164,6 +165,99 @@ namespace Bachelorarbeit_Berechnungstool
             double Ffed = Fqlap * (lUL / hUL);
 
             double LambdaG = Math.PI * Math.Sqrt(E / (0.8 * Rp02));
+
+            try
+            {
+                StreamReader SR = new StreamReader(Directory.GetCurrentDirectory() + "\\Protokoll\\Berechnungsprotokoll Fahrwerksauslegung.htm");
+
+                string Content = SR.ReadToEnd();
+
+                SR.Close();
+                SR.Dispose();
+
+                Content = Content.Replace("Fradox", FxRToben.ToString());
+                Content = Content.Replace("Fradoy", FyRToben.ToString());
+                Content = Content.Replace("Fradoz", "-----");
+                Content = Content.Replace("Fradores", (Math.Sqrt(FyRToben * FyRToben + FxRToben * FxRToben)).ToString());
+
+                Content = Content.Replace("Fradux", FxRTunten.ToString());
+                Content = Content.Replace("Fraduy", FyRTunten.ToString());
+                Content = Content.Replace("Fraduz", FzRTunten.ToString());
+                Content = Content.Replace("Fradures", (Math.Sqrt(FxRTunten * FxRTunten + FyRTunten * FyRTunten + FzRTunten * FzRTunten)).ToString());
+
+                Content = Content.Replace("Fqlo1x", "-----");
+                Content = Content.Replace("Fqlo1y", "-----");
+                Content = Content.Replace("Fqlo1z", "-----");
+                Content = Content.Replace("Fqlo1res", "-----");
+
+                Content = Content.Replace("Fqlo2x", "-----");
+                Content = Content.Replace("Fqlo2y", "-----");
+                Content = Content.Replace("Fqlo2z", "-----");
+                Content = Content.Replace("Fqlo2res", "-----");
+
+                Content = Content.Replace("Fqlu1x", "-----");
+                Content = Content.Replace("Fqlu1y", "-----");
+                Content = Content.Replace("Fqlu1z", Fzqlapunten1.ToString());
+                Content = Content.Replace("Fqlu1res", Fzqlapunten1.ToString());
+
+                Content = Content.Replace("Fqlu2x", "-----");
+                Content = Content.Replace("Fqlu2y", "-----");
+                Content = Content.Replace("Fqlu2z", Fzqlapunten2.ToString());
+                Content = Content.Replace("Fqlu2res", Fzqlapunten2.ToString());
+
+                if(!Directory.Exists(Directory.GetCurrentDirectory() + "\\Berechnungen\\"))
+                {
+                    Directory.CreateDirectory(Directory.GetCurrentDirectory() + "\\Berechnungen\\");
+                }
+                if(SetupComboBox.SelectedIndex != 0)
+                {
+                    using (StreamWriter SW = new StreamWriter(Directory.GetCurrentDirectory() + "\\Berechnungen\\" + SetupComboBox.Text + ".html", false, System.Text.Encoding.UTF8))
+                    {
+                        SW.Write(Content);
+                        SW.Flush();
+
+                        SW.Close();
+                        SW.Dispose();
+                    }
+
+
+                    var p = new Process();
+                    p.StartInfo = new ProcessStartInfo(Directory.GetCurrentDirectory() + "\\Berechnungen\\" + SetupComboBox.Text + ".html")
+                    {
+                        UseShellExecute = true
+                    };
+                    p.Start();
+                }
+                else
+                {
+                    if(SetupNameTxtBox.Text.Trim() != "")
+                    {
+                        using (StreamWriter SW = new StreamWriter(Directory.GetCurrentDirectory() + "\\Berechnungen\\" + SetupNameTxtBox.Text + ".html", false, System.Text.Encoding.UTF8))
+                        {
+                            SW.Write(Content);
+                            SW.Flush();
+
+                            SW.Close();
+                            SW.Dispose();
+                        }
+
+                        var p = new Process();
+                        p.StartInfo = new ProcessStartInfo(Directory.GetCurrentDirectory() + "\\Berechnungen\\" + SetupComboBox.Text + ".html")
+                        {
+                            UseShellExecute = true
+                        };
+                        p.Start();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Musst noch nen Namen eintragen du Keck", "FEHLER");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "FEHLER");
+            }
         }
 
 
