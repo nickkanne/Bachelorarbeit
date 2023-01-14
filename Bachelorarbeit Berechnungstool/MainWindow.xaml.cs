@@ -213,7 +213,7 @@ namespace Bachelorarbeit_Berechnungstool
                 {
                     using (StreamWriter SW = new StreamWriter(Directory.GetCurrentDirectory() + "\\Berechnungen\\" + SetupComboBox.Text + ".html", false, System.Text.Encoding.UTF8))
                     {
-                        SW.Write(Content);
+                        SW.Write(Content.Replace("#NAME#", SetupComboBox.Text));
                         SW.Flush();
 
                         SW.Close();
@@ -234,7 +234,7 @@ namespace Bachelorarbeit_Berechnungstool
                     {
                         using (StreamWriter SW = new StreamWriter(Directory.GetCurrentDirectory() + "\\Berechnungen\\" + SetupNameTxtBox.Text + ".html", false, System.Text.Encoding.UTF8))
                         {
-                            SW.Write(Content);
+                            SW.Write(Content.Replace("#NAME#", SetupNameTxtBox.Text));
                             SW.Flush();
 
                             SW.Close();
