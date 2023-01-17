@@ -154,6 +154,28 @@ namespace Bachelorarbeit_Berechnungstool
 
             double Fzqlapunten2 = Fzqlapunten * (bQL1 + bQL2) / bQL1;
 
+            double FzRToben = 0;
+
+            double Fzqlapoben1 = 0;
+
+            double Fzqlapoben2 = 0;
+
+            double Fxqlapunten2 = FxRTunten;
+
+            double Fxqlapoben2 = FxRToben;
+
+            double Fyqlapunten2 = (FyRTunten * bQL1 - FxRTunten * lQL) / (bQL1 + bQL2);
+
+            double Fyqlapoben2 = (FyRToben * bQL1 - FxRToben * lQL) / (bQL1 + bQL2);
+
+            double Fyqlapunten1 = FyRTunten - Fyqlapunten2;
+
+            double Fyqlapoben1 = FyRToben - Fyqlapoben2;
+
+            double Fxqlapoben1 = 0;
+
+            double Fxqlapunten1 = 0;
+
 
 
             double Fqlap = (Fzmax * lQLPR) / lQL;
@@ -177,7 +199,7 @@ namespace Bachelorarbeit_Berechnungstool
 
                 Content = Content.Replace("Fradox", FxRToben.ToString());
                 Content = Content.Replace("Fradoy", FyRToben.ToString());
-                Content = Content.Replace("Fradoz", "-----");
+                Content = Content.Replace("Fradoz", FzRToben.ToString());
                 Content = Content.Replace("Fradores", (Math.Sqrt(FyRToben * FyRToben + FxRToben * FxRToben)).ToString());
 
                 Content = Content.Replace("Fradux", FxRTunten.ToString());
@@ -185,27 +207,27 @@ namespace Bachelorarbeit_Berechnungstool
                 Content = Content.Replace("Fraduz", FzRTunten.ToString());
                 Content = Content.Replace("Fradures", (Math.Sqrt(FxRTunten * FxRTunten + FyRTunten * FyRTunten + FzRTunten * FzRTunten)).ToString());
 
-                Content = Content.Replace("Fqlo1x", "-----");
-                Content = Content.Replace("Fqlo1y", "-----");
-                Content = Content.Replace("Fqlo1z", "-----");
-                Content = Content.Replace("Fqlo1res", "-----");
+                Content = Content.Replace("Fqlo1x", Fxqlapoben1.ToString());
+                Content = Content.Replace("Fqlo1y", Fyqlapoben1.ToString());
+                Content = Content.Replace("Fqlo1z", Fzqlapoben1.ToString());
+                Content = Content.Replace("Fqlo1res", (Math.Sqrt(Fxqlapoben1 * Fxqlapoben1 + Fyqlapoben1 * Fyqlapoben1 + Fzqlapoben1 * Fzqlapoben1)).ToString());
 
-                Content = Content.Replace("Fqlo2x", "-----");
-                Content = Content.Replace("Fqlo2y", "-----");
-                Content = Content.Replace("Fqlo2z", "-----");
-                Content = Content.Replace("Fqlo2res", "-----");
+                Content = Content.Replace("Fqlo2x", Fxqlapoben2.ToString());
+                Content = Content.Replace("Fqlo2y", Fyqlapoben2.ToString());
+                Content = Content.Replace("Fqlo2z", Fzqlapoben2.ToString());
+                Content = Content.Replace("Fqlo2res", (Math.Sqrt(Fxqlapoben2 * Fxqlapoben2 + Fyqlapoben2 * Fyqlapoben2 + Fzqlapoben2 * Fzqlapoben2)).ToString());
 
-                Content = Content.Replace("Fqlu1x", "-----");
-                Content = Content.Replace("Fqlu1y", "-----");
+                Content = Content.Replace("Fqlu1x", Fxqlapunten1.ToString());
+                Content = Content.Replace("Fqlu1y", Fyqlapunten1.ToString());
                 Content = Content.Replace("Fqlu1z", Fzqlapunten1.ToString());
-                Content = Content.Replace("Fqlu1res", Fzqlapunten1.ToString());
+                Content = Content.Replace("Fqlu1res", (Math.Sqrt(Fxqlapunten1 * Fxqlapunten1 + Fyqlapunten1 * Fyqlapunten1 + Fzqlapunten1 * Fzqlapunten1)).ToString());
 
-                Content = Content.Replace("Fqlu2x", "-----");
-                Content = Content.Replace("Fqlu2y", "-----");
+                Content = Content.Replace("Fqlu2x", Fxqlapunten2.ToString());
+                Content = Content.Replace("Fqlu2y", Fyqlapunten2.ToString());
                 Content = Content.Replace("Fqlu2z", Fzqlapunten2.ToString());
-                Content = Content.Replace("Fqlu2res", Fzqlapunten2.ToString());
+                Content = Content.Replace("Fqlu2res", (Math.Sqrt(Fxqlapunten2 * Fxqlapunten2 + Fyqlapunten2 * Fyqlapunten2 + Fzqlapunten2 * Fzqlapunten2)).ToString());
 
-                if(!Directory.Exists(Directory.GetCurrentDirectory() + "\\Berechnungen\\"))
+                if (!Directory.Exists(Directory.GetCurrentDirectory() + "\\Berechnungen\\"))
                 {
                     Directory.CreateDirectory(Directory.GetCurrentDirectory() + "\\Berechnungen\\");
                 }
